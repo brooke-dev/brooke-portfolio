@@ -1,15 +1,17 @@
 nav {
-    background-color: #e37676;
+    background-color: rgb(204, 213, 174);
     color: white;
     display: flex;
     justify-content: flex-end; /* update justify-content to push links to the right */
     align-items: center;
     padding: 2rem;
   }
+
   
   a {
     font-weight: bold;
-    color: white;
+    /* color: white; */
+    color: rgb(212, 163, 115);
     text-decoration: none;
     font-size: 16px;
     margin-left: 20px;
@@ -18,8 +20,8 @@ nav {
   }
   
   a:hover {
-    color: #ddd;
-    border-bottom: 10px solid #58aa71;
+    color: rgb(250, 237, 205);
+    border-bottom: 10px solid rgb(254, 250, 224);
     font-size: 18px;
     border-radius: 5px;
     margin-left: 20px;

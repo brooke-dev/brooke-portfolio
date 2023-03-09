@@ -1,0 +1,22 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    text-align: center;
+    background-color: rgb(250, 237, 205) ;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-style: italic;
+  }
+  

@@ -30,7 +30,7 @@ function App() {
         <Route exact path="/projects" element={<Projects />} />
         <Route exact path="/connect" element={<Connect/>} />
       </Routes>
-       <h1>Page Count: {count}</h1>
+       {/* <h1>Page Count: {count}</h1> */}
 
     </div>
    
