@@ -1,5 +1,5 @@
 #projects {
-    background-color: #f5f5f5;
+    background-color: rgb(250, 237, 205) ;
     padding: 50px 0;
   }
   
@@ -14,7 +14,7 @@
     position: relative;
     margin: 10px;
     overflow: hidden;
-    width: 600px;
+    width: 800px;
     height: 400px;
   }
   
