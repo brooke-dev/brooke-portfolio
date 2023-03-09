@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Route, Routes } from 'react-router-dom';
 import React from 'react'
 
@@ -13,17 +13,20 @@ import Connect from './NavBarFolder/Connect'
 
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    fetch("/hello")
-      .then((r) => r.json())
-      .then((data) => setCount(data.count));
-  }, []);
+  // useEffect(() => {
+  //   fetch("/hello")
+  //     .then((r) => r.json())
+  //     .then((data) => setCount(data.count));
+  // }, []);
+  const [isDarkMode,setIsDarkMode] = useState(false)
+
 
   return (
-    <div className="App">
-      <NavBar />
+    // <div className="App">
+      <div className={isDarkMode ? 'App dark-mode' : 'App light-mode'}>
+      <NavBar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
