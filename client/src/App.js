@@ -1,7 +1,9 @@
 import './App.css';
 import { useState } from "react";
-import { Route, Routes } from 'react-router-dom';
+// import { Route, Routes } from 'react-router-dom';
 import React from 'react'
+import { Element } from 'react-scroll';
+
 
 // Components
 import NavBar from './NavBarFolder/NavBar'
@@ -27,14 +29,25 @@ function App() {
     // <div className="App">
       <div className={isDarkMode ? 'App dark-mode' : 'App light-mode'}>
       <NavBar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Routes>
+      {/* <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/projects" element={<Projects />} />
         <Route exact path="/connect" element={<Connect/>} />
-      </Routes>
+      </Routes> */}
        {/* <h1>Page Count: {count}</h1> */}
-
+        <Element name="home">
+          <Home />
+        </Element>
+        <Element name="about">
+          <About />
+        </Element>
+        <Element name="projects">
+          <Projects />
+        </Element>
+        <Element name="connect">
+          <Connect />
+        </Element>
     </div>
    
   );
