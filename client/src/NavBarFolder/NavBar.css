@@ -2,15 +2,15 @@ nav {
     background-color: rgb(204, 213, 174);
     color: white;
     display: flex;
-    justify-content: flex-end; /* update justify-content to push links to the right */
+    /* justify-content: flex-end; update justify-content to push links to the right */
+    justify-content: space-between;
     align-items: center;
     padding: 2rem;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    /* width: 98%; If i change this to 98, it shows back up.*/
-    z-index: 999;
+    z-index: 9999;
   }
 
 nav button{
@@ -32,6 +32,9 @@ nav button img {
     margin-right: 40px; /* add more space to the right for the first link */
   }
   
+  nav a:last-child {
+    margin-right: auto;
+  }
 
   @media (max-width: 768px) {
   /* modify the padding to accommodate smaller screen sizes */
@@ -66,3 +69,4 @@ nav button img {
     max-height: 20px; /* reduce the maximum height of the images */
   }
 }
+
