@@ -3,7 +3,7 @@ import './Home.css'
 
 function Home() {
   const [currentHobby, setCurrentHobby] = useState(0)
-  const hobbies = ['an avid foodie🍓', 'a plant mom to 60 plants and growing 🌱', 'an adventurist at heart ⛰️','a rock climber always striving to send a harder project! 🪨 ', 'a guitarist, pianist, percussionist, oboist, vocalist... you get the point! 🎵','a cat mom 🐈‍⬛','a fan of too many movies and tv shoes to list! 🎥']
+  const hobbies = ['an avid foodie🍓', 'a plant mom to 60 plants and growing 🌱', 'an adventurist at heart ⛰️','a rock climber always striving to send a harder project! 🪨 ', 'a guitarist, pianist, percussionist, oboist, vocalist... you get the point! 🎵','a cat mom 🐈‍⬛','a fan of too many movies and tv shows to list! 🎥']
 
   useEffect(() => {
     const intervalId = setInterval(() => {
