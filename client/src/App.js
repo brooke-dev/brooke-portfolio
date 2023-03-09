@@ -1,6 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from "react";
+import { Route, Routes } from 'react-router-dom';
+
+// Components
+import NavBar from './NavBarFolder/NavBar'
+import Home from './NavBarFolder/Home'
+import About from './NavBarFolder/About'
+import Projects from './NavBarFolder/Projects'
+import Connect from './NavBarFolder/Connect'
+
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,9 +22,19 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Page Count: {count}</h1>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/projects" element={<Projects />} />
+        <Route exact path="/connect" element={<Connect/>} />
+      </Routes>
+       <h1>Page Count: {count}</h1>
+
     </div>
+   
   );
 }
 
 export default App;
+

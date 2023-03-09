@@ -1,0 +1,60 @@
+nav {
+    background-color: #e37676;
+    color: white;
+    display: flex;
+    justify-content: flex-end; /* update justify-content to push links to the right */
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    padding-bottom: 2px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    color: #ddd;
+    border-bottom: 10px solid #58aa71;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  
+  a:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  nav a:first-child {
+    margin-right: 40px; /* add more space to the right for the first link */
+  }
+  
+
+  @media (max-width: 768px) {
+  /* modify the padding to accommodate smaller screen sizes */
+  nav {
+    padding: 1rem;
+  }
+
+  /* stack the links vertically and center them */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* add space between the links */
+  a {
+    margin: 0.5rem 0;
+  }
+
+  /* remove the margin from the first link */
+  nav a:first-child {
+    margin-right: 0;
+  }
+}
