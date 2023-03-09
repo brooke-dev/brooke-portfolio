@@ -7,6 +7,7 @@
     padding: 0 20px;
     text-align: center;
     background-color: rgb(250, 237, 205) ;
+    /* background-image: var(--light-bg-image); */
   }
   
   h1 {
@@ -19,4 +20,27 @@
     margin-top: 2rem;
     font-style: italic;
   }
+
+  #home img {
+    border-radius: 50%; /* Make the image round */
+    max-width: 200px; /* Set a maximum width */
+  }
+
+  img.bouncing {
+    animation: bounce 0.5s infinite;
+  }
   
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @media (max-width: 600px) {
+    img {
+      max-width: 150px; /* Set a smaller maximum width for screens with a maximum width of 600px */
+    }
+  }

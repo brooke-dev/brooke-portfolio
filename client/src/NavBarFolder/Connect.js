@@ -6,24 +6,6 @@ function Connect() {
   <section id="connect">
     <h1> Connect Section Here</h1>
     <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
-    <p>CONNECT</p>
   </section>
   );
 }
