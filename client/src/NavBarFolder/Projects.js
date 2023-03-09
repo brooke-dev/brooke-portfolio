@@ -1,17 +1,3 @@
-// import React from 'react';
-
-
-
-// function Projects() {
-//   return (
-//   <section id="projects">
-//     <h1> Projects Section Here </h1>
-//   </section>
-//   );
-// }
-
-// export default Projects;
-
 import React from 'react';
 import './Projects.css'
 import BusyBee from './ProjectImages/BusyBee.png'
