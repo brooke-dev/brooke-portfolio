@@ -5,7 +5,19 @@ nav {
     justify-content: flex-end; /* update justify-content to push links to the right */
     align-items: center;
     padding: 2rem;
+    position: relative; /* add a relative position to the parent nav element */
   }
+
+nav button{
+  background-color: rgb(204, 213, 174);
+  margin-right: auto; /* align button to left */
+}
+
+nav button img {
+  width: 85%;
+  height: auto;
+  max-width: 30px; /* add a maximum width for smaller screens */
+}
   
   a:not(:last-child) {
     margin-right: 20px;
@@ -38,5 +50,14 @@ nav {
   /* remove the margin from the first link */
   nav a:first-child {
     margin-right: 0;
+  }
+
+  nav button {
+    padding: 8px; /* reduce the padding to make the button smaller */
+    font-size: 14px; /* reduce the font size to match the smaller button */
+  }
+  
+  nav button img {
+    max-height: 20px; /* reduce the maximum height of the images */
   }
 }

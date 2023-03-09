@@ -28,7 +28,32 @@ a:hover {
 
 /* Dark mode */
 .dark-mode {
-  background-color: #333;
+  background-color: #054F1D;
+  color: #f5f5f5;
+}
+
+.dark-mode button{
+  background-color: #054F1D;
+  color: #f5f5f5;
+}
+
+.dark-mode #home{
+  background-color: #B68B01;
+  color: #f5f5f5;
+}
+
+.dark-mode #about{
+  background-color: #B68B01;
+  color: #f5f5f5;
+}
+
+.dark-mode #projects{
+  background-color: #B68B01;
+  color: #f5f5f5;
+}
+
+.dark-mode #connect{
+  background-color: #B68B01;
   color: #f5f5f5;
 }
 
